@@ -20,7 +20,9 @@ Consider a netlist with flip-flops and combinational logic. We use combinational
 ![image](https://github.com/KKiranR/Pes_pd/assets/89727621/015b67a2-ba55-4b3e-a86d-6d11bbfc45a8)
 
 - Now we put the netlist in the 'core' area and check the utilization. Using the formula
+
   ```Utilization Factor = Area Occupied by the Netlist/Total Area of the Core```
+  
 - As we can see here, there is 100% utilization, and ```Utilization Factor = 1.```
 - In practical scenarios, we don't go for such a high utilization factor.
 - The 'Aspect Ratio = Height/Width = 1'.
