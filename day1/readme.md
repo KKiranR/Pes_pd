@@ -39,7 +39,9 @@ PDK stands for Process Design Kit.
 - Now to prep the design run the following command ```prep -design picorev32a``` after running this command we will see a new directry created called as run
   ![image](https://github.com/KKiranR/Pes_pd/assets/89727621/535b29ef-7d3d-47bd-875b-89a851cf3598)
 - Now to run synthesis run the following command ```run_synthesis```
+  
   ![Screenshot from 2023-09-15 15-51-19](https://github.com/KKiranR/Pes_pd/assets/89727621/69c39f50-57bc-49f2-b86a-0fc9fc29e939)
+  
 - From these results the flop ratio is calculate by the formula ```number of flops/total number of cells``` in this case it is equal to 0.108
 - After running the synthesis there will be a netlist file created under the folder runs
   ![image](https://github.com/KKiranR/Pes_pd/assets/89727621/89ea4981-7b76-43da-a857-3000a3ca4fc0)
