@@ -30,9 +30,9 @@ Consider a netlist with flip-flops and combinational logic. We use combinational
 - We take the below combinational logic as an example
 ![image](https://github.com/KKiranR/Pes_pd/assets/89727621/1e0fec8d-92e6-4967-86dc-c84b5ec1ba04)
 
-**Running floorplan **
-Use Command ```run_placement``` to run the placement 
-
+** Running floorplan **
+Use Command ```run_floorplan``` to run the placement 
+To view the schematic use command ```magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &```
 ![Screenshot from 2023-09-15 16-44-26](https://github.com/KKiranR/Pes_pd/assets/89727621/3bb29b33-397b-4069-bd26-c15e6cdd30a3)
 
 After Running this command, the placemnt def file is created inside the dir runs/placememt
@@ -41,11 +41,31 @@ After Running this command, the placemnt def file is created inside the dir runs
 
  Use magic commands to veiw the schematic of placed design
 
- ```magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def```
- 
- ![Screenshot from 2023-09-15 16-47-28](https://github.com/KKiranR/Pes_pd/assets/89727621/49fcff35-8bc4-4e01-9611-816e3a94015b)
+ ``` bash = ?
+ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
+```
+ ![image](https://github.com/KKiranR/Pes_pd/assets/89727621/adb14fed-c1b6-40f9-8d26-055944529447)
+
+- We can see from the i/o's are placed at equidistance
+
+  
+![Screenshot from 2023-09-15 16-41-56](https://github.com/KKiranR/Pes_pd/assets/89727621/975cbbf8-0646-4530-ad72-a59af88fac0f)
+- To Align press 's' and 'v' and to zoom press 'z'
+- Instances are this
+  
+  ![Screenshot from 2023-09-15 16-42-46](https://github.com/KKiranR/Pes_pd/assets/89727621/fd35b7a9-8e50-4c44-a3b0-edddc348043b)
+**Placement**
+  - To run placement run the command ```run_placement```  command to do placement and routing after this a def file is created inside the results directory which is used to view the shcematic
+![image](https://github.com/KKiranR/Pes_pd/assets/89727621/dbf3d5f5-1f8c-454d-a80f-a14f9b69b16c)
+
+- To open the schematic of placed design runthe following command
+  ``` bash=?
+  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
+  ```
 
 ![Screenshot from 2023-09-15 16-47-13](https://github.com/KKiranR/Pes_pd/assets/89727621/1c3c40f1-6c94-4ddb-bf5e-262bf44d7278)
+- If we zoom in we can see the routing betweeen the instances 
+ ![Screenshot from 2023-09-15 16-47-28](https://github.com/KKiranR/Pes_pd/assets/89727621/49fcff35-8bc4-4e01-9611-816e3a94015b)
 
 
 **Cell Design and Characterization Flow**
