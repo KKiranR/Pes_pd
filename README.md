@@ -21,5 +21,5 @@
 - Timing Analysis with Ideal Clocks using OpenSTA
 - Clock Tree Synthesis TritonCTS and Signal Integrity
   
-[**Day5**](https://github.com/KKiranR/Pes_pd/)
-
+[**Day5**](https://github.com/KKiranR/Pes_pd/tree/main/day5)
+- Power Distribution Network and Routing
