@@ -68,6 +68,7 @@ if { [file exists $filename] == 1} {
 
 ![Screenshot from 2023-09-19 13-01-11](https://github.com/KKiranR/Pes_pd/assets/89727621/baffc89a-b431-44a7-92b7-59466b2343b2)
 ![Screenshot from 2023-09-19 13-00-54](https://github.com/KKiranR/Pes_pd/assets/89727621/4c80e29b-fbdf-42c7-8dc4-ba23f63498a4)
+![image](https://github.com/KKiranR/Pes_pd/assets/89727621/1baf3d8d-f71c-44d6-b96a-796877db4b43)
 
 ## Timming Analysis with Ideal Clock using Open STA
 Configure OpenSTA for Post-Synth Timing Analysis
